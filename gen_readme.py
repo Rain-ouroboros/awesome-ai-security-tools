@@ -94,7 +94,7 @@ PICKLESCAN = ("picklescan", GH + "mmaitre314/picklescan")
 SECLAB_TASKFLOW = ("seclab-taskflow-agent", GH + "GitHubSecurityLab/seclab-taskflow-agent")
 SIGMA_OPTIMIZER = ("SigmaOptimizer", GH + "YusukeJustinNakajima/SigmaOptimizer")
 FRAIM = ("Fraim", GH + "fraim-dev/fraim")
-AI_SOC = ("AI_SOC", GH + "zhadyz/AI_SOC")
+SOCTALK = ("soctalk", GH + "soctalk/soctalk")
 SPIKEE = ("spikee", GH + "ReversecLabs/spikee")
 PROMPTMAP = ("promptmap", GH + "utkusen/promptmap")
 
@@ -124,11 +124,11 @@ SECTIONS.append((
          "desc": "Minimal three-stage LLM pipeline (context → scan → skeptical triage) for zero-day discovery in C/C++."},
         {"name": "SigmaOptimizer", "repo": "YusukeJustinNakajima/SigmaOptimizer", "tags": "🟢",
          "desc": "Generates, tests, and refines Sigma rules from real logs with false-positive checking.",
-         "related": [AI_SOC, SECLAB_TASKFLOW]},
+         "related": [SOCTALK, SECLAB_TASKFLOW]},
         {"name": "ai-soc-triage-assistant", "repo": "pranavibunny/ai-soc-triage-assistant", "tags": "🟢⚠️",
          "desc": "SOC alert triage assistant with prompt-injection guardrails, output validation, and MITRE ATT&CK mapping."},
     ],
-    "> See also: GitHub Security Lab's *Taskflow Agent* (CodeQL-alert triage, credited with ~30 real CVEs since Aug 2025) and OpenAI's *Aardvark* / *Codex Security* research previews — public references exist, but there is no standalone installable repo to badge here.",
+    "> See also: OpenAI's *Aardvark* / *Codex Security* research previews — public references exist, but there is no standalone installable repo to badge here.",
 ))
 
 SECTIONS.append((
@@ -147,8 +147,8 @@ SECTIONS.append((
             {"name": "agent-scan", "repo": "snyk/agent-scan", "tags": "🟢", "org": "Snyk",
              "desc": "Security scanner for AI agents, MCP servers, and agent skills; the successor path for the original Invariant Labs mcp-scan work.",
              "related": [AGUARA, MCP_SCANNER, SKILL_SCANNER]},
-            {"name": "inkog", "repo": "inkog-io/inkog", "tags": "🟢",
-             "desc": "Static security scanner for AI agents across LangChain, LangGraph, CrewAI, AutoGen, and no-code workflows; flags prompt-injection sinks, runaway loops, and missing oversight.",
+            {"name": "inkog", "repo": "inkog-io/inkog", "tags": "🟠", "org": "Inkog",
+             "desc": "Commercial-backed static security scanner for AI agents across LangChain, LangGraph, CrewAI, AutoGen, and no-code workflows; Apache-2.0 CLI with proprietary deep-scan engine.",
              "related": [AGENT_SCAN, AGENTIC_RADAR]},
             {"name": "AgentShield", "repo": "affaan-m/agentshield", "tags": "🟢",
              "desc": "Security scanner for AI-agent configurations, MCP servers, hooks, and tool permissions with CLI, GitHub Action, and app workflows.",
@@ -192,6 +192,7 @@ SECTIONS.append((
              "related": [SKILL_SCANNER, AGENTGUARD]},
             {"name": "AgentFence", "repo": "agentfence/agentfence", "tags": "🟢",
              "desc": "Runtime-oriented test harness for deployed agents, probing prompt injection, secret leakage, and system-instruction exposure.",
+             "note": "*Early-stage project.*",
              "related": [AGENTGUARD, AGENT_SCAN]},
             {"name": "clawsec", "repo": "prompt-security/clawsec", "tags": "🟢⚠️", "org": "Prompt Security",
              "desc": "Security skill suite for OpenClaw-family agents; AGPL-3.0 licensed.",
@@ -371,7 +372,7 @@ SECTIONS.append((
          "related": [("IATelligence", GH + "fr0gger/IATelligence")]},
         {"name": "threat-intelligence-cti-analysis", "repo": "AnandBinuArjun/threat-intelligence-cti-analysis", "tags": "🟢",
          "desc": "NLP/LLM pipeline for IOC extraction, MITRE ATT&CK mapping, and knowledge-graph generation from unstructured CTI.",
-         "related": [("AI_SOC", GH + "zhadyz/AI_SOC")]},
+         "related": [SOCTALK]},
     ],
     None,
 ))
@@ -383,8 +384,8 @@ SECTIONS.append((
     [
         {"name": "AI-SOC-Agent", "repo": "M507/ai-soc-agent", "tags": "🟢",
          "desc": "Black Hat 2025 MCP server exposing security-investigation tools (ELK, IRIS)."},
-        {"name": "AI_SOC", "repo": "zhadyz/AI_SOC", "tags": "🟢",
-         "desc": "AI-augmented SOC stack combining Wazuh, TheHive, RAG, alert explanation, MITRE mapping, and correlation.",
+        {"name": "soctalk", "repo": "soctalk/soctalk", "tags": "🟢",
+         "desc": "LangGraph SOC automation agent with MCP integrations for Wazuh, Cortex, TheHive, and MISP plus mock-agent test lab.",
          "related": [SIGMA_OPTIMIZER]},
         {"name": "agentic-soc-platform", "repo": "FunnyWolf/agentic-soc-platform", "tags": "🟢",
          "desc": "Agentic SOC platform (LangGraph/Dify) with local-LLM support."},
@@ -500,7 +501,7 @@ SECTIONS.append((
              "desc": "Curated catalog of practical defenses against prompt injection."},
         ]),
         ("Prompt-Injection Classifier Models", [
-            {"kind": "hf_model", "name": "Wolf Defender Prompt Injection", "model": "patronus-studio/wolf-defender-prompt-injection", "tags": "🟢", "org": "Patronus AI",
+            {"kind": "hf_model", "name": "Wolf Defender Prompt Injection", "model": "patronus-studio/wolf-defender-prompt-injection", "tags": "🟢", "org": "Patronus Studio",
              "desc": "Hugging Face text-classification model for prompt-injection detection in agents, chatbots, and CI workflows.",
              "license": "Apache-2.0", "access": "open", "artifacts": "Safetensors, ONNX"},
             {"kind": "hf_model", "name": "DeBERTa v3 Prompt Injection v2", "model": "protectai/deberta-v3-base-prompt-injection-v2", "tags": "🟢", "org": "Protect AI",
