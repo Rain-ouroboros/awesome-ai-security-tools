@@ -301,7 +301,7 @@ Tools for attacking and defending LLM applications themselves.
 
 ### Prompt-Injection Classifier Models
 
-- **[Wolf Defender Prompt Injection](https://huggingface.co/patronus-studio/wolf-defender-prompt-injection)** 🟢 — Hugging Face text-classification model for prompt-injection detection in agents, chatbots, and CI workflows. *(Patronus Studio)* *license: Apache-2.0 · access: open · artifacts: Safetensors, ONNX.*
+- **[Wolf Defender Prompt Injection](https://huggingface.co/patronus-studio/wolf-defender-prompt-injection)** 🟢 — Hugging Face text-classification model for prompt-injection detection in agents, chatbots, and CI workflows. *(Patronus Studio / Casdo Labs)* *license: Apache-2.0 · access: open · artifacts: Safetensors, ONNX.*
 - **[DeBERTa v3 Prompt Injection v2](https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2)** 🟢 — Apache-licensed prompt-injection classifier usable via Transformers pipelines and ONNX. *(Protect AI)* *license: Apache-2.0 · access: open · artifacts: Safetensors, ONNX.*
 - **[PromptGuard](https://huggingface.co/codeintegrity-ai/promptguard)** 🟢⚠️ — ModernBERT-based prompt-injection and jailbreak classifier. *(CodeIntegrity AI)* *license: Apache-2.0 · access: gated auto · artifacts: Safetensors.*
 - **[Prompt Guard 86M](https://huggingface.co/meta-llama/Prompt-Guard-86M)** 🟠⚠️ — Meta prompt-injection and jailbreak classifier from the Llama Guard family. *(Meta)* *license: Llama 3.1 · access: gated manual · artifacts: Safetensors.*

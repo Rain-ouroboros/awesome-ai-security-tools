@@ -501,7 +501,7 @@ SECTIONS.append((
              "desc": "Curated catalog of practical defenses against prompt injection."},
         ]),
         ("Prompt-Injection Classifier Models", [
-            {"kind": "hf_model", "name": "Wolf Defender Prompt Injection", "model": "patronus-studio/wolf-defender-prompt-injection", "tags": "🟢", "org": "Patronus Studio",
+            {"kind": "hf_model", "name": "Wolf Defender Prompt Injection", "model": "patronus-studio/wolf-defender-prompt-injection", "tags": "🟢", "org": "Patronus Studio / Casdo Labs",
              "desc": "Hugging Face text-classification model for prompt-injection detection in agents, chatbots, and CI workflows.",
              "license": "Apache-2.0", "access": "open", "artifacts": "Safetensors, ONNX"},
             {"kind": "hf_model", "name": "DeBERTa v3 Prompt Injection v2", "model": "protectai/deberta-v3-base-prompt-injection-v2", "tags": "🟢", "org": "Protect AI",
