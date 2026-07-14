@@ -898,6 +898,29 @@
                   "url": "https://github.com/ArmorerLabs/Armorer-Guard"
                 }
               ]
+            },
+            {
+              "name": "Agent Trust",
+              "repo": "Rain-ouroboros/agent-trust",
+              "org": "Rain Ouroboros",
+              "desc": "Runtime-enforced agent security manifest with 24+ boundaries, LLM semantic classification, advisory receipts, and ed25519-signed runtime manifest for verifiable agent trust. Python package on PyPI.",
+              "status": [
+                "open_source"
+              ],
+              "related": [
+                {
+                  "label": "agent-audit",
+                  "url": "https://github.com/scadastrangelove/agent-audit"
+                },
+                {
+                  "label": "asamm",
+                  "url": "https://github.com/scadastrangelove/asamm"
+                },
+                {
+                  "label": "agentfence",
+                  "url": "https://github.com/agentfence/agentfence"
+                }
+              ]
             }
           ]
         }
